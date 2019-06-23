@@ -332,7 +332,7 @@
       
         
           
-            <h2 id="ReadMe"><a href="#ReadMe" class="headerlink" title="ReadMe"></a>ReadMe</h2><p><a href="http://www.51token.xyz" target="_blank" rel="noopener"><strong>51token</strong></a><strong>总算开张了，目前只做了可过期token，功能会越来越多的哦。</strong></p>
+            <h5 id="ReadMe："><a href="#ReadMe：" class="headerlink" title="ReadMe："></a><strong>ReadMe：</strong></h5><p><a href="http://www.51token.xyz" target="_blank" rel="noopener"><strong>51token</strong></a><strong>总算开张了，目前只做了可过期token，功能会越来越多的哦。</strong></p>
 <br>
 
 <br>
@@ -375,14 +375,6 @@
 <td>可以不填<br>必须大于0<br>小于60*60*24<br>输入检查不通过<br>则变成默认值</td>
 <td></td>
 </tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-</tr>
 </tbody></table>
 <h5 id="返回内容："><a href="#返回内容：" class="headerlink" title="返回内容："></a><strong>返回内容：</strong></h5><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//例1：</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"200"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"1113"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//例2：</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"200"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"244121747"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
 
@@ -418,14 +410,6 @@
 <td></td>
 <td>token输入不正确<br>或者时间过期<br>则校验失败</td>
 <td>之前生成的Token</td>
-</tr>
-<tr>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
-<td></td>
 </tr>
 </tbody></table>
 <h5 id="返回内容：-1"><a href="#返回内容：-1" class="headerlink" title="返回内容："></a><strong>返回内容：</strong></h5><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//例1：验证成功</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"200"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"51token:012863849:SUCCESS"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//例2：验证失败</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"500"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"FAIL"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"51token:244121747:FAIL"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
@@ -1230,6 +1214,21 @@
   
 
   
+<script>
+(function(){
+    var bp = document.createElement('script');
+    var curProtocol = window.location.protocol.split(':')[0];
+    if (curProtocol === 'https') {
+        bp.src = 'https://zz.bdstatic.com/linksubmit/push.js';        
+    }
+    else {
+        bp.src = 'http://push.zhanzhang.baidu.com/push.js';
+    }
+    var s = document.getElementsByTagName("script")[0];
+    s.parentNode.insertBefore(bp, s);
+})();
+</script>
+
 
   
   
