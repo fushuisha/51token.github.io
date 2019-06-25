@@ -79,13 +79,17 @@
 
 
 
+<meta name="description" content="10年老程序员">
+<meta name="keywords" content="51token">
 <meta property="og:type" content="website">
-<meta property="og:title" content="51token">
+<meta property="og:title" content="51token帮助文档">
 <meta property="og:url" content="http://www.51token.club/index.html">
-<meta property="og:site_name" content="51token">
+<meta property="og:site_name" content="51token帮助文档">
+<meta property="og:description" content="10年老程序员">
 <meta property="og:locale" content="zh-Hans">
 <meta name="twitter:card" content="summary">
-<meta name="twitter:title" content="51token">
+<meta name="twitter:title" content="51token帮助文档">
+<meta name="twitter:description" content="10年老程序员">
 
 
 
@@ -121,7 +125,7 @@
 
 
 
-  <title>51token</title>
+  <title>51token帮助文档</title>
   
 
 
@@ -162,12 +166,12 @@
     <div class="custom-logo-site-title">
       <a href="/" class="brand" rel="start">
         <span class="logo-line-before"><i></i></span>
-        <span class="site-title">51token</span>
+        <span class="site-title">51token帮助文档</span>
         <span class="logo-line-after"><i></i></span>
       </a>
     </div>
       
-        <h1 class="site-subtitle" itemprop="description"></h1>
+        <h1 class="site-subtitle" itemprop="description">博客兼帮助文档</h1>
       
   </div>
 
@@ -193,6 +197,16 @@
               <i class="menu-item-icon fa fa-fw fa-home"></i> <br>
             
             首页
+          </a>
+        </li>
+      
+        
+        <li class="menu-item menu-item-about">
+          <a href="/about/" rel="section">
+            
+              <i class="menu-item-icon fa fa-fw fa-user"></i> <br>
+            
+            关于
           </a>
         </li>
       
@@ -258,7 +272,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="51token">
+      <meta itemprop="name" content="51token帮助文档">
     </span>
 
     
@@ -342,90 +356,22 @@
       
         
           
-            <h5 id="ReadMe："><a href="#ReadMe：" class="headerlink" title="ReadMe："></a><strong>ReadMe：</strong></h5><p><a href="http://www.51token.xyz" target="_blank" rel="noopener"><strong>51token</strong></a><strong>总算开张了，目前只做了可过期token，功能会越来越多的哦。</strong></p>
-<br>
-
-<br>
-
-<hr>
-<h5 id="接口：Token生成"><a href="#接口：Token生成" class="headerlink" title="接口：Token生成"></a><strong>接口：Token生成</strong></h5><h5 id="链接例子："><a href="#链接例子：" class="headerlink" title="链接例子："></a><strong>链接例子：</strong></h5><p><strong><a href="http://www.51token.xyz/get4DigitToken?schema=&amp;length=&amp;expire=" target="_blank" rel="noopener">http://www.51token.xyz/get4DigitToken?schema=&amp;length=&amp;expire=</a></strong></p>
-<p><strong><a href="http://www.51token.xyz/get4DigitToken?schema=51token&amp;length=9&amp;expire=60" target="_blank" rel="noopener">http://www.51token.xyz/get4DigitToken?schema=51token&amp;length=9&amp;expire=60</a></strong></p>
-<h5 id="接口描述："><a href="#接口描述：" class="headerlink" title="接口描述："></a><strong>接口描述：</strong></h5><table>
-<thead>
-<tr>
-<th>参数名</th>
-<th>说明</th>
-<th>类型</th>
-<th>默认值</th>
-<th>检查</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>schema</td>
-<td>区分因子</td>
-<td>String</td>
-<td>51token</td>
-<td>可以不填<br>可以是任意字符<br>不要超过50位<br>输入检查不通过<br>则变成默认值</td>
-<td></td>
-</tr>
-<tr>
-<td>length</td>
-<td>位数</td>
-<td>Integer</td>
-<td>4</td>
-<td>可以不填<br>只能填1-9当中的一个数<br>输入检查不通过<br>则变成默认值</td>
-<td>输入4则返回4位Token<br>输入9则返回9位Token</td>
-</tr>
-<tr>
-<td>expire</td>
-<td>过期时间</td>
-<td>Integer</td>
-<td>30</td>
-<td>可以不填<br>必须大于0<br>小于60*60*24<br>输入检查不通过<br>则变成默认值</td>
-<td></td>
-</tr>
-</tbody></table>
-<h5 id="返回内容："><a href="#返回内容：" class="headerlink" title="返回内容："></a><strong>返回内容：</strong></h5><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//例1：</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"200"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"1113"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//例2：</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"200"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"244121747"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
-
-<br>
-
-<br>
-
-<hr>
-<h5 id="接口：Token验证"><a href="#接口：Token验证" class="headerlink" title="接口：Token验证"></a><strong>接口：Token验证</strong></h5><h5 id="链接例子：-1"><a href="#链接例子：-1" class="headerlink" title="链接例子："></a><strong>链接例子：</strong></h5><p><strong><a href="http://www.51token.xyz/verify4DigitToken?schema=51token&amp;token=244121747" target="_blank" rel="noopener">http://www.51token.xyz/verify4DigitToken?schema=51token&amp;token=244121747</a></strong></p>
-<h5 id="接口描述：-1"><a href="#接口描述：-1" class="headerlink" title="接口描述："></a><strong>接口描述：</strong></h5><table>
-<thead>
-<tr>
-<th>参数名</th>
-<th>说明</th>
-<th>类型</th>
-<th>默认值</th>
-<th>检查</th>
-<th>备注</th>
-</tr>
-</thead>
-<tbody><tr>
-<td>schema</td>
-<td>区分因子</td>
-<td>String</td>
-<td>51token</td>
-<td>可以不填<br>可以是任意字符<br>不要超过50位<br>输入检查不通过<br>则变成默认值</td>
-<td></td>
-</tr>
-<tr>
-<td>token</td>
-<td>token</td>
-<td>String</td>
-<td></td>
-<td>token输入不正确<br>或者时间过期<br>则校验失败</td>
-<td>之前生成的Token</td>
-</tr>
-</tbody></table>
-<h5 id="返回内容：-1"><a href="#返回内容：-1" class="headerlink" title="返回内容："></a><strong>返回内容：</strong></h5><figure class="highlight json"><table><tr><td class="gutter"><pre><span class="line">1</span><br><span class="line">2</span><br><span class="line">3</span><br><span class="line">4</span><br><span class="line">5</span><br><span class="line">6</span><br><span class="line">7</span><br><span class="line">8</span><br><span class="line">9</span><br><span class="line">10</span><br><span class="line">11</span><br><span class="line">12</span><br><span class="line">13</span><br></pre></td><td class="code"><pre><span class="line">//例1：验证成功</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"200"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"SUCCESS"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"51token:012863849:SUCCESS"</span></span><br><span class="line">&#125;</span><br><span class="line"></span><br><span class="line">//例2：验证失败</span><br><span class="line">&#123;</span><br><span class="line">    <span class="attr">"code"</span>: <span class="string">"500"</span>,</span><br><span class="line">    <span class="attr">"msg"</span>: <span class="string">"FAIL"</span>,</span><br><span class="line">    <span class="attr">"data"</span>: <span class="string">"51token:244121747:FAIL"</span></span><br><span class="line">&#125;</span><br></pre></td></tr></table></figure>
+          ReadMe：51token总算开张了，目前只做了可过期token，功能会越来越多的哦。
 
 
-          
+
+
+
+接口：Token生成链接例子：http://www.51token.xyz/get4DigitToken?schema=&amp;length=&amp;expire=
+http://www.51to
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/51token-Expirable-Token.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -481,7 +427,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="51token">
+      <meta itemprop="name" content="51token帮助文档">
     </span>
 
     
@@ -565,12 +511,19 @@
       
         
           
-            <h3 id="搬运到Bilibili"><a href="#搬运到Bilibili" class="headerlink" title="搬运到Bilibili"></a>搬运到Bilibili</h3><p><a href="https://www.bilibili.com/video/av54515868/" target="_blank" rel="noopener"><strong>2019 CRL 亞洲賽區 S1 - 季賽第6週第2天</strong></a></p>
-<p><a href="https://www.bilibili.com/video/av54518376/" target="_blank" rel="noopener"><strong>2019 CRL 亞洲賽區 S1 - 季賽第6週第3天</strong></a></p>
-<p><a href="https://www.bilibili.com/video/av54523465/" target="_blank" rel="noopener"><strong>【CRL西方】CRL2019春季赛第1周第2天</strong></a></p>
-<p><a href="https://www.bilibili.com/video/av54524184/" target="_blank" rel="noopener"><strong>【CRL西方】CRL2019春季赛第1周第3天</strong></a></p>
+          搬运到Bilibili2019 CRL 亞洲賽區 S1 - 季賽第6週第2天
+2019 CRL 亞洲賽區 S1 - 季賽第6週第3天
+【CRL西方】CRL2019春季赛第1周第2天
+【CRL西方】CRL2019春季赛第1周第3天
 
           
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/CRL2019Move.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -626,7 +579,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="51token">
+      <meta itemprop="name" content="51token帮助文档">
     </span>
 
     
@@ -710,32 +663,20 @@
       
         
           
-            <h3 id="ReadMe"><a href="#ReadMe" class="headerlink" title="ReadMe"></a>ReadMe</h3><p><strong>最近在玩UiPath，UiPath是RPA应用，Robotic Process Automation 流程自动化机器人，那具体是什么东西呢。总之先安装吧，装好就知道是什么了。</strong></p>
-<h3 id="安装"><a href="#安装" class="headerlink" title="安装"></a>安装</h3><p><strong>进入<a href="https://www.uipath.com.cn/" target="_blank" rel="noopener">https://www.uipath.com.cn/</a>点击“开始试用”</strong><br><img src="/images/uipath/UiPath20190603101113.jpg" alt></p>
-<p><strong>选社区版</strong><br><img src="/images/uipath/UiPath20190603104006.jpg" alt></p>
-<p><strong>随便填一下点提交</strong></p>
-<p><img src="/images/uipath/UiPath20190603104141.jpg" alt></p>
-<p><strong>会收到一封邮件</strong></p>
-<p><img src="/images/uipath/UiPath20190603104434.jpg" alt></p>
-<p><strong>就可以下载一个UiPathStudioSetup.exe的文件，安装完之后长这样</strong></p>
-<p><img src="/images/uipath/UiPath20190603110405.jpg" alt></p>
-<p><img src="/images/uipath/UiPath20190603110459.jpg" alt></p>
-<p><strong>如果你以上操作都懒得的做，可以直接下我百度网盘上的文件：</strong></p>
-<p><strong>链接: <a href="https://pan.baidu.com/s/1Jsvdvid2W7Ionc0FZ30ITw" target="_blank" rel="noopener">https://pan.baidu.com/s/1Jsvdvid2W7Ionc0FZ30ITw</a> 提取码: vxb6</strong></p>
-<h3 id="官方教程"><a href="#官方教程" class="headerlink" title="官方教程"></a>官方教程</h3><p><strong>Enroll，<a href="https://academy.uipath.com/learn/public/learning_plan/view/35/RPADeveloper" target="_blank" rel="noopener">https://academy.uipath.com/learn/public/learning_plan/view/35/RPADeveloper</a></strong></p>
-<p><img src="/images/uipath/UiPath20190603105108.jpg" alt></p>
-<p><strong>注册登录后，就Enroll了RPA Developer</strong></p>
-<p><img src="/images/uipath/UiPath20190603105308.jpg" alt></p>
-<p><strong>学习Level1和Level2，Level1是UiPathStudio的教程，Level2是Orchestrator教程</strong></p>
-<p><img src="/images/uipath/UiPath20190603105517.jpg" alt></p>
-<p><strong>教程中含有视频，练习，练习答案和测试。通过测试可以获得证书。</strong></p>
-<p><img src="/images/uipath/UiPath20190603105846.jpg" alt></p>
-<h3 id="野生教程"><a href="#野生教程" class="headerlink" title="野生教程"></a>野生教程</h3><p><strong>油管有一个印度团队做的<a href="https://www.youtube.com/watch?v=kVtgA_PQ5R4&t=3s" target="_blank" rel="noopener">野生教程</a>，我搬运到<a href="https://www.bilibili.com/video/av53239142/" target="_blank" rel="noopener">B站</a>了。之后有时间的话，我会添加中文字幕，前提是有时间哦。</strong></p>
-<p><a href="https://www.bilibili.com/video/av53239142/" target="_blank" rel="noopener"><strong>印度团队教程</strong></a></p>
-<p><a href="https://www.bilibili.com/video/av54610292/" target="_blank" rel="noopener"><strong>UiPath基本操作</strong></a></p>
-<p><a href="https://www.bilibili.com/video/av55888777" target="_blank" rel="noopener"><strong>UiPath高级操作</strong></a></p>
+          ReadMe最近在玩UiPath，UiPath是RPA应用，Robotic Process Automation 流程自动化机器人，那具体是什么东西呢。总之先安装吧，装好就知道是什么了。
+安装进入https://www.uipath.com.cn/点击“开始试用”
+选社区版
+随便填一下点提交
 
-          
+会收
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/UiPath.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -791,7 +732,7 @@
     </span>
 
     <span hidden itemprop="publisher" itemscope itemtype="http://schema.org/Organization">
-      <meta itemprop="name" content="51token">
+      <meta itemprop="name" content="51token帮助文档">
     </span>
 
     
@@ -875,20 +816,20 @@
       
         
           
-            <h3 id="ReadMe"><a href="#ReadMe" class="headerlink" title="ReadMe"></a>ReadMe</h3><p><strong>各位小伙伴你们好，这是我的博客，主要存放51token帮助文档和主播的博客</strong></p>
-<p><strong>我之前做过一些视频博客，放到<a href="https://space.bilibili.com/7678015" target="_blank" rel="noopener">B站</a>了</strong></p>
-<p><strong>后面我做视频博客，都会在这里发布一个对应的MD，算是相互呼应，相互导流吧</strong></p>
-<h3 id="内容"><a href="#内容" class="headerlink" title="内容"></a>内容</h3><p><strong>我自己想做的内容还挺多：</strong></p>
-<ul>
-<li><strong>比如我想把SpringCloud，Docker，K8S，ELK一系列的东西都做一遍</strong></li>
-<li><strong>然后我还想做一个叫开源开箱的视频，现在开源软件，不都号称开箱即用吗，再加上开箱的视频又比较火，那开源开箱肯定会火吧。而且开源软件这么多，做个10年肯定没问题。我特别想做deepfake这种人工智能，图形处理的换脸开源开箱，因为这种特别好玩。</strong></li>
-<li><strong>我自己还写了一个java版的rtmp服务器<a href="https://gitee.com/kabuzhu/srsj" target="_blank" rel="noopener">SRSJ</a>，功能还很简陋，我一直想要完善一下。</strong></li>
-<li><strong>我又想做游戏视频。比如皇室战争，怪猎世界，这两款现在玩的比较多的游戏，我已经在<a href="https://space.bilibili.com/7678015" target="_blank" rel="noopener">B站</a>发过几十个视频了，所以还是想继续做下去。</strong></li>
-<li><strong>域名叫做51token，主要考虑到token这东西，现在用的特别多。比如验证码就是一种token。为了解决CSRF问题也可以使用token。Oauth2.0中有了JWT（JsonWebToken）。那么能不能把各种token做成一种公共微服务，或者是小程序呢。</strong></li>
-</ul>
-<h3 id="总结"><a href="#总结" class="headerlink" title="总结"></a>总结</h3><p><strong>总之，我先把博客建起来，很多想做的事情，再慢慢丰富完善吧。</strong></p>
+          ReadMe各位小伙伴你们好，这是我的博客，主要存放51token帮助文档和主播的博客
+我之前做过一些视频博客，放到B站了
+后面我做视频博客，都会在这里发布一个对应的MD，算是相互呼应，相互导流吧
+内容我自己想做的内容还挺多：
 
-          
+比如我想把SpringCloud，Docker，K8S，ELK一系列的
+          ...
+          <!--noindex-->
+          <div class="post-button text-center">
+            <a class="btn" href="/README.html#more" rel="contents">
+              阅读全文 &raquo;
+            </a>
+          </div>
+          <!--/noindex-->
         
       
     </div>
@@ -1008,6 +949,18 @@
                         <i class="fa fa-fw fa-envelope"></i>E-Mail</a>
                   </span>
                 
+                  <span class="links-of-author-item">
+                    <a href="https://space.bilibili.com/7678015" target="_blank" title="Bilibili">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Bilibili</a>
+                  </span>
+                
+                  <span class="links-of-author-item">
+                    <a href="https://gitee.com/kabuzhu" target="_blank" title="Gitee">
+                      
+                        <i class="fa fa-fw fa-globe"></i>Gitee</a>
+                  </span>
+                
             </div>
           
 
@@ -1015,20 +968,6 @@
           
 
           
-          
-            <div class="links-of-blogroll motion-element links-of-blogroll-block">
-              <div class="links-of-blogroll-title">
-                <i class="fa  fa-fw fa-link"></i>
-                Links
-              </div>
-              <ul class="links-of-blogroll-list">
-                
-                  <li class="links-of-blogroll-item">
-                    <a href="https://space.bilibili.com/7678015" title="Bilibili" target="_blank">Bilibili</a>
-                  </li>
-                
-              </ul>
-            </div>
           
 
           
@@ -1206,6 +1145,24 @@
 
 
 
+
+
+<!-- LOCAL: You can save these files to your site and update links -->
+    
+        
+        <link rel="stylesheet" href="https://aimingoo.github.io/gitmint/style/default.css">
+        <script src="https://aimingoo.github.io/gitmint/dist/gitmint.browser.js"></script>
+    
+<!-- END LOCAL -->
+
+    
+      <style>
+        a.gitment-editor-footer-tip { display: none; }
+        .gitment-container.gitment-footer-container { display: none; }
+      </style>
+    
+
+    
 
 
 
