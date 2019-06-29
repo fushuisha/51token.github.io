@@ -1,6 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">
   <url>
+    <loc>http://www.51token.club/Facerig-Live2D.html</loc>
+    <lastmod>2019-06-29</lastmod>
+  </url>  <url>
+    <loc>http://www.51token.club/51token-Expirable-Token.html</loc>
+    <lastmod>2019-06-29</lastmod>
+  </url>  <url>
     <loc>http://www.51token.club/about/index.html</loc>
     <lastmod>2019-06-26</lastmod>
   </url>  <url>
@@ -8,9 +14,6 @@
     <lastmod>2019-06-26</lastmod>
   </url>  <url>
     <loc>http://www.51token.club/CRL2019Move.html</loc>
-    <lastmod>2019-06-26</lastmod>
-  </url>  <url>
-    <loc>http://www.51token.club/51token-Expirable-Token.html</loc>
     <lastmod>2019-06-26</lastmod>
   </url>
 </urlset>
