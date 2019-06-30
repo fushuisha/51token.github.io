@@ -1,7 +1,7 @@
 User-agent: * Allow: /
 Allow: /archives/
 Disallow: /vendors/
-Disallow: /categories/
+Allow: /categories/
 
 
 Sitemap: http://www.51token.club/baidusitemap.xml
